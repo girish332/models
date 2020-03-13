@@ -79,6 +79,15 @@ _CITYSCAPES_INFORMATION = DatasetDescriptor(
     ignore_label=255,
 )
 
+_IDD_LITE = DatasetDescriptor(
+    splits_to_sizes={
+        'train': 309,  # num of samples in images/training
+        'val': 61,  # num of samples in images/validation
+    },
+    num_classes=7,
+    ignore_label=0,
+)
+
 _PASCAL_VOC_SEG_INFORMATION = DatasetDescriptor(
     splits_to_sizes={
         'train': 1464,
@@ -103,6 +112,7 @@ _DATASETS_INFORMATION = {
     'cityscapes': _CITYSCAPES_INFORMATION,
     'pascal_voc_seg': _PASCAL_VOC_SEG_INFORMATION,
     'ade20k': _ADE20K_INFORMATION,
+    'iddlite': _IDD_LITE,
 }
 
 # Default file pattern of TFRecord of TensorFlow Example.

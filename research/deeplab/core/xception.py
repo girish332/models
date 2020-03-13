@@ -52,7 +52,8 @@ import collections
 from six.moves import range
 import tensorflow as tf
 from tensorflow.contrib import slim as contrib_slim
-
+#import sys
+#sys.path.append('/home/${girish332}/models/research/slim/')
 from deeplab.core import utils
 from tensorflow.contrib.slim.nets import resnet_utils
 from nets.mobilenet import conv_blocks as mobilenet_v3_ops
